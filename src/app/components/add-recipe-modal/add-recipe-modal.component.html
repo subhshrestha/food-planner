@@ -1,0 +1,52 @@
+<p-dialog
+  header="Add Recipe"
+  [(visible)]="visible"
+  [modal]="true"
+  [style]="{ width: '90vw', maxWidth: '500px' }"
+  [draggable]="false"
+  [resizable]="false"
+  (onShow)="onShow()"
+>
+  <div class="search-container">
+    <!-- Search Input -->
+    <div class="mb-4">
+      <div class="search-input w-full">
+        <i class="pi pi-search search-input__icon"></i>
+        <input
+          type="text"
+          pInputText
+          placeholder="Search recipes..."
+          class="w-full search-input__field"
+          [ngModel]="searchQuery()"
+          (ngModelChange)="onSearchChange($event)"
+        />
+      </div>
+    </div>
+
+    <!-- Results List -->
+    <div class="results-list">
+      @if (searchResults().length === 0) {
+        <div class="text-center text-gray-500 py-8">
+          <i class="pi pi-search text-3xl mb-2"></i>
+          <p>No recipes found</p>
+        </div>
+      } @else {
+        @for (recipe of searchResults(); track recipe.id) {
+          <div
+            class="recipe-item flex justify-between items-center p-3 border-b border-gray-200 hover:bg-gray-50"
+          >
+            <div>
+              <span class="font-medium text-gray-800">{{ recipe.name }}</span>
+              <span class="text-sm text-gray-500 ml-2">
+                ({{ recipe.prepTime + recipe.cookTime }} min)
+              </span>
+            </div>
+            <p-button label="Add" icon="pi pi-plus" size="small" (click)="addRecipe(recipe)" />
+          </div>
+        }
+      }
+    </div>
+
+    <p class="text-sm text-gray-500 mt-4">Showing {{ searchResults().length }} available recipes</p>
+  </div>
+</p-dialog>

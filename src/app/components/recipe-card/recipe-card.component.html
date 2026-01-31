@@ -1,0 +1,40 @@
+<p-card
+  class="recipe-card cursor-pointer"
+  (click)="handleClick()"
+  [style]="{ width: '100%', height: '100%' }"
+>
+  <ng-template #header>
+    <div class="recipe-card__image">
+      <img
+        [src]="recipe().image"
+        [alt]="recipe().name"
+        class="w-full h-40 object-cover"
+        (error)="onImageError($event)"
+      />
+      <button
+        pButton
+        type="button"
+        icon="pi pi-times"
+        class="recipe-card__delete p-button-rounded p-button-danger p-button-sm"
+        (click)="handleDelete($event)"
+        aria-label="Remove recipe"
+      ></button>
+    </div>
+  </ng-template>
+
+  <div class="p-2">
+    <h3 class="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">
+      {{ recipe().name }}
+    </h3>
+    <div class="flex gap-3 text-sm text-gray-500">
+      <span class="flex items-center gap-1">
+        <i class="pi pi-clock"></i>
+        {{ recipe().prepTime + recipe().cookTime }} min
+      </span>
+      <span class="flex items-center gap-1">
+        <i class="pi pi-users"></i>
+        {{ recipe().servings }}
+      </span>
+    </div>
+  </div>
+</p-card>

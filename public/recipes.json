@@ -1,0 +1,188 @@
+{
+  "recipes": [
+    {
+      "id": "aalu-karela-bhujiya",
+      "name": "Aalu/Karela Bhujiya",
+      "image": "/recipe-images/aalu-bhujiya.jpg",
+      "ingredients": [
+        { "name": "potato", "quantity": 1, "unit": "kg", "category": "produce" },
+        { "name": "karela", "quantity": 300, "unit": "g", "category": "produce" }
+      ],
+      "instructions": "Peel and slice potatoes thinly\nSlice karela into thin rounds and remove seeds if desired\nHeat oil in a pan over medium heat\nAdd potatoes and karela, cook, stirring occasionally, until tender and lightly crisp\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 4,
+      "categories": ["vegetarian"]
+    },
+    {
+      "id": "pork-chilli",
+      "name": "Pork Chilli",
+      "image": "/recipe-images/pork-chilli.jpg",
+      "ingredients": [
+        { "name": "pork (skinless, boneless)", "quantity": 1, "unit": "kg", "category": "meat" },
+        { "name": "tomato", "quantity": 200, "unit": "g", "category": "produce" },
+        { "name": "pepper fruit", "quantity": 1, "unit": "pieces", "category": "produce" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "ketchup", "quantity": 2, "unit": "tbsp", "category": "pantry" }
+      ],
+      "instructions": "Slice pork into bite-sized pieces\nChop tomato, pepper fruit, and onion\nStir-fry pork until browned\nAdd onion and pepper fruit, cook until softened\nAdd tomato and ketchup, simmer until saucy and pork is cooked through\nSeason to taste and serve",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "categories": ["spicy"]
+    },
+    {
+      "id": "soya-veg-mix",
+      "name": "Soya veg mix",
+      "image": "/recipe-images/soya-veg-mix.jpg",
+      "ingredients": [
+        { "name": "soybean meal pellets", "quantity": 300, "unit": "g", "category": "pantry" },
+        { "name": "pepper fruit", "quantity": 1, "unit": "pieces", "category": "produce" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "ketchup", "quantity": 2, "unit": "tbsp", "category": "pantry" }
+      ],
+      "instructions": "Soak soybean meal pellets in warm water, then drain\nChop pepper fruit and onion\nSauté onion and pepper fruit until softened\nAdd soybean meal pellets and ketchup, cook until heated through and well coated\nSeason to taste and serve",
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "categories": ["vegetarian"]
+    },
+    {
+      "id": "momo",
+      "name": "MOMO",
+      "image": "/recipe-images/momo.jpg",
+      "ingredients": [
+        { "name": "frozen momo (dumplings)", "quantity": 1, "unit": "pack", "category": "frozen" },
+        { "name": "tomato", "quantity": 500, "unit": "g", "category": "produce" }
+      ],
+      "instructions": "Cook frozen momo according to package directions\nChop tomatoes and cook down into a simple sauce\nServe momo with the tomato sauce",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 2,
+      "categories": ["snack"]
+    },
+    {
+      "id": "chicken-curry",
+      "name": "Chicken curry",
+      "image": "/recipe-images/chicken-curry.jpg",
+      "ingredients": [
+        { "name": "chicken", "quantity": 1, "unit": "pieces", "category": "meat" },
+        { "name": "tomato", "quantity": 500, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" }
+      ],
+      "instructions": "Chop tomato and onion\nBrown chicken in a pan\nAdd onion and cook until softened\nAdd tomato and simmer until the chicken is cooked through and sauce thickens\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 4,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "pasta-sauce",
+      "name": "Pasta sauce",
+      "image": "/recipe-images/pasta-sauce.jpg",
+      "ingredients": [
+        { "name": "minced chicken", "quantity": 1, "unit": "kg", "category": "meat" },
+        { "name": "canned pasta sauce", "quantity": 2, "unit": "pieces", "category": "pantry" },
+        { "name": "frozen vegetables", "quantity": 2, "unit": "pieces", "category": "frozen" }
+      ],
+      "instructions": "Brown minced chicken in a pan\nAdd canned pasta sauce and simmer\nStir in frozen vegetables and cook until tender\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 6,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "lamb-curry",
+      "name": "Lamb curry",
+      "image": "/recipe-images/lamb-curry.jpg",
+      "ingredients": [
+        { "name": "goat meat", "quantity": 1, "unit": "kg", "category": "meat" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" }
+      ],
+      "instructions": "Chop tomato\nBrown goat meat in a pan\nAdd tomato and simmer until meat is tender and sauce thickens\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 3,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "gundruk-soup",
+      "name": "Gundruk soup",
+      "image": "/recipe-images/gundruk-soup.jpg",
+      "ingredients": [
+        { "name": "gundruk", "quantity": 200, "unit": "g", "category": "produce" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 1, "unit": "pieces", "category": "produce" },
+        { "name": "potato", "quantity": 200, "unit": "g", "category": "produce" },
+        { "name": "dried soya", "quantity": 100, "unit": "g", "category": "pantry" }
+      ],
+      "instructions": "Soak gundruk and dried soya in warm water, then drain\nChop tomato, onion, and potato\nSauté onion until softened\nAdd tomato, potato, gundruk, and dried soya\nAdd water and simmer until potato is tender\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 3,
+      "categories": ["soup"]
+    },
+    {
+      "id": "masyoura",
+      "name": "Masyoura",
+      "image": "/recipe-images/masyoura.jpg",
+      "ingredients": [
+        { "name": "masyoura", "quantity": 200, "unit": "g", "category": "pantry" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 1, "unit": "pieces", "category": "produce" },
+        { "name": "potato", "quantity": 200, "unit": "g", "category": "produce" }
+      ],
+      "instructions": "Soak masyoura if needed, then drain\nChop tomato, onion, and potato\nSauté onion until softened\nAdd tomato, potato, and masyoura\nAdd water and simmer until potato is tender and masyoura is cooked through\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 30,
+      "servings": 3,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "cream-pasta",
+      "name": "Cream pasta",
+      "image": "/recipe-images/cream-pasta.jpg",
+      "ingredients": [
+        { "name": "cream", "quantity": 300, "unit": "g", "category": "dairy" },
+        { "name": "pasta", "quantity": 200, "unit": "g", "category": "pantry" },
+        { "name": "bacon bits", "quantity": 100, "unit": "g", "category": "meat" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "parmesan cheese", "quantity": 50, "unit": "g", "category": "dairy" },
+        { "name": "meat (pork/chicken/big shrimp)", "quantity": 200, "unit": "g", "category": "meat" }
+      ],
+      "instructions": "Cook pasta according to package directions\nSauté onion and bacon bits until fragrant\nAdd chosen meat and cook until done\nStir in cream and parmesan, simmer until slightly thickened\nToss with pasta and serve",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 2,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "gundruk-aachar",
+      "name": "Gundruk aachar",
+      "image": "/recipe-images/gundruk-aachar.jpg",
+      "ingredients": [
+        { "name": "gundruk", "quantity": 300, "unit": "g", "category": "produce" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "dried soya", "quantity": 100, "unit": "g", "category": "pantry" }
+      ],
+      "instructions": "Soak gundruk and dried soya in warm water, then drain\nChop tomato\nSauté tomato briefly, then add gundruk and dried soya\nCook until warmed through\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 20,
+      "servings": 3,
+      "categories": ["condiment"]
+    },
+    {
+      "id": "fried-mushroom",
+      "name": "Fried mushroom",
+      "image": "/recipe-images/fried-mushroom.jpg",
+      "ingredients": [
+        { "name": "dried mushroom", "quantity": 300, "unit": "g", "category": "pantry" }
+      ],
+      "instructions": "Soak dried mushrooms in warm water, then drain\nSauté mushrooms in a pan until lightly crisp\nSeason to taste and serve",
+      "prepTime": 5,
+      "cookTime": 15,
+      "servings": 1,
+      "categories": ["snack"]
+    }
+  ]
+}

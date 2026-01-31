@@ -1,0 +1,44 @@
+<div class="grocery-list-container">
+  <!-- Header -->
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold text-gray-800">
+      <i class="pi pi-shopping-cart mr-2 text-orange-500"></i>
+      Grocery List
+    </h2>
+    <p-button label="Download PDF" icon="pi pi-download" (click)="downloadPdf.emit()" />
+  </div>
+
+  <!-- Total Items -->
+  <p class="text-gray-600 mb-4">{{ getTotalItems() }} items total</p>
+
+  <!-- Categories -->
+  @for (category of categories; track category.key) {
+    @if (groceryList()[category.key].length > 0) {
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-700 mb-3 flex items-center gap-2">
+          <i class="pi {{ category.icon }} text-orange-500"></i>
+          {{ category.label }}
+        </h3>
+        <ul class="space-y-2">
+          @for (item of groceryList()[category.key]; track item.id) {
+            <li class="flex items-center gap-2 text-gray-700 pl-2">
+              <span class="w-2 h-2 bg-orange-400 rounded-full"></span>
+              <span class="font-medium">{{ capitalize(item.name) }}</span>
+              <span class="text-gray-500">({{ formatItem(item.quantity, item.unit) }})</span>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  }
+
+  <!-- Back Button -->
+  <div class="mt-8 pt-4 border-t border-gray-200">
+    <p-button
+      label="Back to Recipes"
+      icon="pi pi-arrow-left"
+      severity="secondary"
+      (click)="back.emit()"
+    />
+  </div>
+</div>

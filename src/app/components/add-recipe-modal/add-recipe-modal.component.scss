@@ -1,0 +1,31 @@
+.search-container {
+  min-height: 300px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input__icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.search-input__field {
+  padding-left: 2.25rem;
+}
+
+.results-list {
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.recipe-item:last-child {
+  border-bottom: none;
+}

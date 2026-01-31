@@ -1,0 +1,93 @@
+<p-confirmDialog />
+
+@if (currentView() === 'selection') {
+  <div class="selection-container">
+    <!-- Header -->
+    <header class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+        <i class="pi pi-calendar mr-2 text-orange-500"></i>
+        Weekly Meal Planner
+      </h1>
+      <p-button
+        icon="pi pi-refresh"
+        severity="secondary"
+        [outlined]="true"
+        [rounded]="true"
+        ariaLabel="Start Fresh"
+        (click)="confirmReset()"
+      />
+    </header>
+
+    <!-- Loading State -->
+    @if (recipeService.loading()) {
+      <div class="flex justify-center items-center py-20">
+        <i class="pi pi-spin pi-spinner text-4xl text-orange-500"></i>
+      </div>
+    }
+
+    <!-- Error State -->
+    @if (recipeService.error()) {
+      <div class="text-center py-20">
+        <i class="pi pi-exclamation-triangle text-4xl text-red-500 mb-4"></i>
+        <p class="text-red-600">{{ recipeService.error() }}</p>
+        <p-button
+          label="Retry"
+          icon="pi pi-refresh"
+          class="mt-4"
+          (click)="recipeService.loadRecipes()"
+        />
+      </div>
+    }
+
+    <!-- Content -->
+    @if (!recipeService.loading() && !recipeService.error()) {
+      <!-- Subheader -->
+      <div class="flex justify-between items-center mb-4">
+        <p class="text-gray-600">Your selections ({{ recipeService.selectedCount() }})</p>
+        <p-button label="Add" icon="pi pi-plus" size="small" (click)="openAddModal()" />
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="recipe-grid mb-8">
+        @for (recipe of recipeService.selectedRecipes(); track recipe.id) {
+          <app-recipe-card
+            [recipe]="recipe"
+            (remove)="handleDeleteRecipe($event)"
+            (selectRecipe)="handleRecipeClick($event)"
+          />
+        }
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap gap-3 justify-center">
+        <p-button
+          label="Download Recipes PDF"
+          icon="pi pi-file-pdf"
+          severity="secondary"
+          (click)="downloadRecipesPdf()"
+          [disabled]="recipeService.selectedCount() === 0"
+        />
+        <p-button
+          label="Generate Grocery List"
+          icon="pi pi-shopping-cart"
+          (click)="generateGroceryList()"
+          [disabled]="recipeService.selectedCount() === 0"
+        />
+      </div>
+    }
+  </div>
+
+  <!-- Recipe Detail Modal -->
+  <app-recipe-modal [recipe]="selectedRecipeForModal()" [(visible)]="showRecipeModal" />
+
+  <!-- Add Recipe Modal -->
+  <app-add-recipe-modal [(visible)]="showAddModal" (add)="handleAddRecipe($event)" />
+}
+
+@if (currentView() === 'grocery' && groceryList()) {
+  <app-grocery-list
+    [groceryList]="groceryList()!"
+    (back)="backToRecipes()"
+    (downloadPdf)="downloadGroceryPdf()"
+  />
+}
