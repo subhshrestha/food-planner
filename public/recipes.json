@@ -183,6 +183,55 @@
       "cookTime": 15,
       "servings": 1,
       "categories": ["snack"]
+    },
+    {
+      "id": "kerau-aalu",
+      "name": "Kerau aalu",
+      "image": "/recipe-images/kerau-aalu.jpg",
+      "ingredients": [
+        { "name": "potato", "quantity": 500, "unit": "g", "category": "produce" },
+        { "name": "boiled kerau", "quantity": 200, "unit": "g", "category": "produce" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 1, "unit": "pieces", "category": "produce" }
+      ],
+      "instructions": "Chop potato, tomato, and onion\nSauté onion until softened\nAdd potato and cook until tender\nStir in tomato and cook until softened\nSeason to taste and serve",
+      "prepTime": 5,
+      "cookTime": 15,
+      "servings": 3,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "samosa-chaat",
+      "name": "Samosa chaat",
+      "image": "/recipe-images/samosa-chaat.jpg",
+      "ingredients": [
+        { "name": "potato", "quantity": 500, "unit": "g", "category": "produce" },
+        { "name": "boiled kerau", "quantity": 200, "unit": "g", "category": "produce" },
+        { "name": "frozen samosa", "quantity": 1, "unit": "pack", "category": "frozen" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 1, "unit": "pieces", "category": "produce" }
+      ],
+      "instructions": "Cook frozen samosa according to package directions\nBoil or sauté potatoes until tender\nChop tomato and onion\nAssemble samosa with potato, tomato, and onion\nSeason to taste and serve",
+      "prepTime": 5,
+      "cookTime": 15,
+      "servings": 3,
+      "categories": ["snack"]
+    },
+    {
+      "id": "cauli-potato-curry",
+      "name": "Cauli potato curry",
+      "image": "/recipe-images/cauli-potato-curry.jpg",
+      "ingredients": [
+        { "name": "potato", "quantity": 500, "unit": "g", "category": "produce" },
+        { "name": "cauliflower", "quantity": 1, "unit": "head", "category": "produce" },
+        { "name": "tomato", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 1, "unit": "pieces", "category": "produce" }
+      ],
+      "instructions": "Chop potato, cauliflower, tomato, and onion\nSauté onion until softened\nAdd potato and cauliflower, cook until tender\nStir in tomato and cook until softened\nSeason to taste and serve",
+      "prepTime": 5,
+      "cookTime": 15,
+      "servings": 3,
+      "categories": ["comfort"]
     }
   ]
 }
