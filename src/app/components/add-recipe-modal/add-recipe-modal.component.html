@@ -21,6 +21,16 @@
           [ngModel]="searchQuery()"
           (ngModelChange)="onSearchChange($event)"
         />
+        @if (searchQuery()) {
+          <button
+            type="button"
+            class="search-input__clear"
+            aria-label="Clear search"
+            (click)="clearSearch()"
+          >
+            <i class="pi pi-times"></i>
+          </button>
+        }
       </div>
     </div>
 

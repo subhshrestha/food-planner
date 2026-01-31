@@ -33,6 +33,11 @@ export class AddRecipeModalComponent {
     this.updateResults();
   }
 
+  clearSearch(): void {
+    this.searchQuery.set('');
+    this.updateResults();
+  }
+
   private updateResults(): void {
     this.searchResults.set(this.recipeService.searchRecipes(this.searchQuery()));
   }
