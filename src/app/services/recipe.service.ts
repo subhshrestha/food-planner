@@ -61,7 +61,8 @@ export class RecipeService {
     this.errorSignal.set(null);
 
     try {
-      const response = await fetch('/recipes.json');
+      const recipesUrl = new URL('recipes.json', document.baseURI).toString();
+      const response = await fetch(recipesUrl);
       if (!response.ok) {
         throw new Error('Failed to load recipes');
       }
