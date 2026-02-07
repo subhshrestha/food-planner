@@ -253,21 +253,26 @@
       "categories": ["comfort"]
     },
     {
-      "id": "butter-clicken",
-      "name": "Butter clicken",
+      "id": "butter-chicken",
+      "name": "Butter chicken",
       "image": "/recipe-images/butter-chicken.jpg",
       "ingredients": [
-        { "name": "chicken", "quantity": 600, "unit": "g", "category": "meat" },
-        { "name": "butter", "quantity": 50, "unit": "g", "category": "dairy" },
+        { "name": "chicken", "quantity": 250, "unit": "g", "category": "meat" },
+        { "name": "salt", "quantity": 1, "unit": "tsp", "category": "pantry" },
+        { "name": "chilli powder", "quantity": 1, "unit": "tsp", "category": "pantry" },
+        { "name": "ginger-garlic paste", "quantity": 1, "unit": "tbsp", "category": "produce" },
+        { "name": "oil", "quantity": 2, "unit": "tbsp", "category": "pantry" },
+        { "name": "onion", "quantity": 150, "unit": "g", "category": "produce" },
+        { "name": "butter", "quantity": 1, "unit": "tbsp", "category": "dairy" },
         { "name": "tomato", "quantity": 300, "unit": "g", "category": "produce" },
-        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
-        { "name": "cream", "quantity": 100, "unit": "g", "category": "dairy" },
-        { "name": "garlic", "quantity": 3, "unit": "cloves", "category": "produce" },
-        { "name": "ginger", "quantity": 20, "unit": "g", "category": "produce" },
-        { "name": "spice mix (garam masala/chili/paprika)", "quantity": 2, "unit": "tbsp", "category": "pantry" }
+        { "name": "cashew", "quantity": 30, "unit": "g", "category": "pantry" },
+        { "name": "sugar", "quantity": 1, "unit": "tsp", "category": "pantry" },
+        { "name": "garam masala", "quantity": 1, "unit": "tsp", "category": "pantry" },
+        { "name": "water", "quantity": 1, "unit": "cup", "category": "pantry" },
+        { "name": "cream", "quantity": 3, "unit": "tbsp", "category": "dairy" }
       ],
-      "instructions": "Chop onion, tomato, garlic, and ginger\nBrown chicken in butter until lightly golden\nAdd onion, garlic, and ginger; cook until fragrant\nAdd tomato and spice mix, simmer until saucy\nStir in cream and cook until chicken is cooked through\nSeason to taste and serve",
-      "prepTime": 15,
+      "instructions": "Marinate chicken with salt, chilli powder, and ginger-garlic paste for 30 minutes\nHeat 1 tbsp oil in a pan and fry the marinated chicken; set aside\nAdd a little oil to the same pan (no need to clean)\nAdd finely diced onion and cook until it releases water; do not brown\nAdd butter, diced tomato, cashew, salt, chilli powder, sugar, garam masala, and water\nSimmer until tomatoes soften\nBlend the tomato mixture with a hand blender, strain, and return to the pan\nAdd cream, a little butter if desired, and the fried chicken; simmer for 5 minutes",
+      "prepTime": 30,
       "cookTime": 25,
       "servings": 4,
       "categories": ["comfort"]
@@ -290,6 +295,28 @@
       "cookTime": 10,
       "servings": 3,
       "categories": ["comfort"]
+    },
+    {
+      "id": "chicken-wrap",
+      "name": "Chicken Wrap",
+      "image": "/recipe-images/chicken-wrap.jpg",
+      "ingredients": [
+        { "name": "tortilla wrap", "quantity": 4, "unit": "pieces", "category": "pantry" },
+        { "name": "chicken breast", "quantity": 500, "unit": "g", "category": "meat" },
+        { "name": "lettuce", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "tomato", "quantity": 150, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 80, "unit": "g", "category": "produce" },
+        { "name": "mayonnaise", "quantity": 3, "unit": "tbsp", "category": "pantry" },
+        { "name": "yogurt", "quantity": 3, "unit": "tbsp", "category": "dairy" },
+        { "name": "lemon juice", "quantity": 1, "unit": "tbsp", "category": "produce" },
+        { "name": "garlic", "quantity": 1, "unit": "cloves", "category": "produce" },
+        { "name": "oil", "quantity": 1, "unit": "tbsp", "category": "pantry" }
+      ],
+      "instructions": "Slice chicken into strips and season to taste\nHeat oil in a pan and cook chicken until browned and cooked through\nShred lettuce, dice tomato, and thinly slice onion\nMix mayonnaise, yogurt, lemon juice, and minced garlic into a quick sauce\nWarm tortillas briefly, then layer lettuce, tomato, onion, and chicken\nDrizzle sauce, roll tightly, and serve",
+      "prepTime": 15,
+      "cookTime": 12,
+      "servings": 4,
+      "categories": ["comfort", "quick"]
     }
   ]
 }
