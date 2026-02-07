@@ -232,6 +232,64 @@
       "cookTime": 15,
       "servings": 3,
       "categories": ["comfort"]
+    },
+    {
+      "id": "chaomean",
+      "name": "Chaomean",
+      "image": "/recipe-images/chaomean.jpg",
+      "ingredients": [
+        { "name": "noodles", "quantity": 300, "unit": "g", "category": "pantry" },
+        { "name": "cabbage", "quantity": 200, "unit": "g", "category": "produce" },
+        { "name": "carrot", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "garlic", "quantity": 2, "unit": "cloves", "category": "produce" },
+        { "name": "soy sauce", "quantity": 2, "unit": "tbsp", "category": "pantry" },
+        { "name": "oil", "quantity": 1, "unit": "tbsp", "category": "pantry" }
+      ],
+      "instructions": "Cook noodles according to package directions and drain\nShred cabbage and carrot, slice onion, and mince garlic\nHeat oil in a wok or pan over high heat\nStir-fry onion and garlic until fragrant\nAdd cabbage and carrot, cook until slightly tender\nAdd noodles and soy sauce, toss until evenly coated and hot\nSeason to taste and serve",
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 3,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "butter-clicken",
+      "name": "Butter clicken",
+      "image": "/recipe-images/butter-chicken.jpg",
+      "ingredients": [
+        { "name": "chicken", "quantity": 600, "unit": "g", "category": "meat" },
+        { "name": "butter", "quantity": 50, "unit": "g", "category": "dairy" },
+        { "name": "tomato", "quantity": 300, "unit": "g", "category": "produce" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "cream", "quantity": 100, "unit": "g", "category": "dairy" },
+        { "name": "garlic", "quantity": 3, "unit": "cloves", "category": "produce" },
+        { "name": "ginger", "quantity": 20, "unit": "g", "category": "produce" },
+        { "name": "spice mix (garam masala/chili/paprika)", "quantity": 2, "unit": "tbsp", "category": "pantry" }
+      ],
+      "instructions": "Chop onion, tomato, garlic, and ginger\nBrown chicken in butter until lightly golden\nAdd onion, garlic, and ginger; cook until fragrant\nAdd tomato and spice mix, simmer until saucy\nStir in cream and cook until chicken is cooked through\nSeason to taste and serve",
+      "prepTime": 15,
+      "cookTime": 25,
+      "servings": 4,
+      "categories": ["comfort"]
+    },
+    {
+      "id": "fried-rice",
+      "name": "Fried rice",
+      "image": "/recipe-images/fried-rice.jpg",
+      "ingredients": [
+        { "name": "cooked rice", "quantity": 500, "unit": "g", "category": "pantry" },
+        { "name": "egg", "quantity": 2, "unit": "pieces", "category": "pantry" },
+        { "name": "frozen vegetables", "quantity": 200, "unit": "g", "category": "frozen" },
+        { "name": "onion", "quantity": 100, "unit": "g", "category": "produce" },
+        { "name": "garlic", "quantity": 2, "unit": "cloves", "category": "produce" },
+        { "name": "soy sauce", "quantity": 2, "unit": "tbsp", "category": "pantry" },
+        { "name": "oil", "quantity": 1, "unit": "tbsp", "category": "pantry" }
+      ],
+      "instructions": "Beat eggs and scramble in a hot pan, then set aside\nSauté onion and garlic in oil until fragrant\nAdd frozen vegetables and cook until heated through\nAdd cooked rice and soy sauce; stir-fry until hot and evenly coated\nStir in scrambled eggs, season to taste, and serve",
+      "prepTime": 10,
+      "cookTime": 10,
+      "servings": 3,
+      "categories": ["comfort"]
     }
   ]
 }
